@@ -1,0 +1,11 @@
+<input
+      placeholder="Datepicker"
+      class="form-control"
+      #dp="bsDatepicker"
+      type="hidden"
+      (bsValueChange)="onValueChange($event)"
+      bsDatepicker>
+<button class="btn btn-bluestack" (click)="dp.toggle()" [attr.aria-expanded]="dp.isOpen" type="button">
+      <img src="./../../assets/calendar.png" height="50%" width="auto"/>
+      Schedule Again
+</button>

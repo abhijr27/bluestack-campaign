@@ -1,0 +1,14 @@
+::ng-deep {
+    bs-datepicker-container {
+        z-index: 1080;
+        right: 50px !important;
+        left: auto !important;
+    }
+}
+
+.btn-bluestack {
+    background-color: transparent;
+    height: 55px !important;
+    color: #007bff;
+    font-size: 13px;
+}

@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-12 pt-4">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">DATE</th>
+                    <th scope="col">CAMPAIGN</th>
+                    <th scope="col">VIEW</th>
+                    <th scope="col">ACTION</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of utilityService.getMockData().data | live">
+                  <td>{{row.createdOn}}</td>
+                  <td><app-campaign-col [rowInfo]="row"></app-campaign-col></td>
+                  <td>View Pricing</td>
+                  <td><app-action-col [row]="row"></app-action-col></td>
+                </tr>
+              </tbody>
+        </table>
+    </div>
+</div>

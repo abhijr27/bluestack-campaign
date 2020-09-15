@@ -1,0 +1,21 @@
+<div class="row justify-content-center dashboard">
+    <div class="col-lg-8 col-md-12 col-xs-12 dashboard-title">
+        <h2>Manage Campaigns</h2>
+    </div>
+</div>
+<div class="row justify-content-center dashboard">
+    <div class="col-lg-8 col-md-12 col-xs-12">
+        <tabset [justified]="true">
+            <tab heading="Upcoming Campaigns"
+                (selectTab)="setCurrentTab('upcoming')">
+                <app-upcoming *ngIf="currentTab==='upcoming'"></app-upcoming>
+            </tab>
+            <tab heading="Live Campaigns" (selectTab)="setCurrentTab('live')">
+                <app-live *ngIf="currentTab==='live'"></app-live>
+            </tab>
+            <tab heading="Past Campaigns" (selectTab)="setCurrentTab('past')">
+                <app-past *ngIf="currentTab==='past'"></app-past>
+            </tab>
+          </tabset>
+    </div>
+</div>

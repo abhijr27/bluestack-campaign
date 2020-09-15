@@ -1,0 +1,41 @@
+.dashboard {
+    &-title {
+        color: #2c416c;
+        font-weight: bold;
+    }
+}
+
+::ng-deep {
+
+    .nav-tabs .nav-link {
+        color: #2c416c;
+    }
+    .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+        color: #a2bb54;
+        background-color: #fff;
+        border: 0;
+        border-bottom: 5px solid #a2bb54;
+        :hover {
+          border: 0;  
+        }
+    }
+
+    .nav-tabs .nav-link:hover {
+        color: #a2bb54;
+        background-color: #fff;
+        border: 0;
+        border-bottom: 5px solid #a2bb54;
+    }
+
+    .table thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #dee2e6;
+        background-color: #f1f1f4;
+        color: #2c416c;
+    }
+
+    .table tbody td {
+        vertical-align: middle;
+        color: #2c416c;
+    }
+}
